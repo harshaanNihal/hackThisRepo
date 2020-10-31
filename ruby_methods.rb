@@ -13,12 +13,14 @@ def animal(input_animal = "dog")
 end
 
 
+# using prompt
 
+def ask
+  puts "How many planets are present in our solar system?"
+  answer = gets
 
-
-
-
-
+  return "Incorrect" unless answer.to_i == 8
+end
 
 
 
