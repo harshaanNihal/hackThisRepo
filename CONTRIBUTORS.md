@@ -3,3 +3,4 @@
 - [Tuba Nihal Khan](https://github.com/klassynihal)
 - [Harshaan](https://github.com/harshaanNihal)
 - [zehan](https://github.com/zehan12)
+- [Ritesh](https://github.com/rit-kr)
