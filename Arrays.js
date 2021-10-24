@@ -54,3 +54,14 @@ for(var i = 0;i<colors.length;i++){
 
 var lastColor=colors[colors.length-1];
 console.log(lastColor);
+
+
+// 13. Removes a specific color from the array using its index
+colors.splice(colors.indexOf('red'), 1);
+console.log(colors);
+//[ 'ochre', 'blue', 'green', 'yellow', 'ultraviolet' ]
+
+// 14. Removes the firs item of the array
+colors.shift();
+console.log(colors);
+//[ 'blue', 'green', 'yellow', 'ultraviolet' ]
