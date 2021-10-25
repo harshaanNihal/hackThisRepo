@@ -16,6 +16,9 @@
 2. `toUpperCase`
 
 ```js
+
+
+
 let userName = 'Zehan Khan';
 userName.toUpperCase(); //"ZEHAN KHAN"
 let sentance = 'A quick brown fox jumped over a lazy dog';
@@ -29,6 +32,9 @@ houseName.toUpperCase(); //"STARK"
 3. `toLowerCase`
 
 ```js
+
+
+
 let lastName = 'KHAN'
 lastName.toLowerCase(); //"khan"
 let words = 'A QUICK BROWN FOX JUMPED OVER A LAZY DOG';
@@ -40,6 +46,11 @@ houseName.toLowerCase(); //"starks"
 4. `trim`
 
 ```js
+
+
+
+
+
 let title = "     Hello World     ";
 title.trim(); //"Hello World"
 let 
@@ -56,6 +67,10 @@ title.trimEnd(); //"    Hello World"
 
 6. `trimStart`
 ```js
+
+
+
+
 let title = "     Hello World      ";
 title.trimStart(); //"Hello World    "
 
