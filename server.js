@@ -1,3 +1,4 @@
+server javascript file
 var http = require('http');
 var url = require('url');
 var fs = require('fs');
@@ -51,7 +52,8 @@ function handleRequest(req, res) {
         fs.ftruncate(fd, (err) => {
           if (err) return console.log(err);
           fs.writeFile(fd, store, (err) => {
-            if (err) return console.log(err);
+            if (err) return console.log(err);ini"
+lastName: "Gupta"}
             fs.close(fd, () => {
              return res.end(`${username} updated succesfully`)
             })
