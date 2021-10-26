@@ -259,6 +259,33 @@ var person = {
 }
 
 var clone = Object.assign({},person);
+/*
+  Since with the Object.assign we don't really clone deep objects, we can use JSON.stringfy and JSON.parse to deep clone and modify without side effects
+> a = { a: 'a', b: 'b', c: { c: 'c'} } //Creating a
+  { a: 'a', b: 'b', c: { c: 'c' } }
+
+> b = Object.assign({},a); // Clonning to b
+{ a: 'a', b: 'b', c: { c: 'c' } }
+
+> b.c.c = 'd' // Modifying a deep object on b
+'d'
+> a
+{ a: 'a', b: 'b', c: { c: 'd' } } // It reflected on a
+
+  Using JSON.parse / JSON.stringfy:
+> a = { a: 'a', b: 'b', c: { c: 'c'} }
+{ a: 'a', b: 'b', c: { c: 'c' } }
+> b = JSON.parse(JSON.stringify(a))
+{ a: 'a', b: 'b', c: { c: 'c' } }
+> b.c.c = 'd'
+'d'
+> a
+{ a: 'a', b: 'b', c: { c: 'c' } }
+> b
+{ a: 'a', b: 'b', c: { c: 'd' } }
+> 
+*/
+var realClone = JSON.parse(JSON.stringify(person));
 
 //For these last few challenges, I'll create three penguins for you to work with. Copy-paste this code snippet to the end of your code:
 
