@@ -1,12 +1,8 @@
 function solution(str){
-  var i = 0;
-  var result = new Array();
-  if (str.length % 2 !== 0) {
-    str = str + '_';
-  }
-  while (i < str.length) {
+  var result = [];
+  str = str.length % 2 ? str + '-' : str
+  for(int i = 0 ; i < str.length ; i+=2) {
       result.push(str[i] + str[i+1]);
-      i += 2;
-    }
+  }
   return result;
 }
