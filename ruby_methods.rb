@@ -1,7 +1,7 @@
 # gsub with ruby blocks
 
 def animal(input_animal = "dog")
-  input_animal.gsub(/\w+/) { |animal| 
+  input_animal.gsub(/\w+/) do |animal| 
     if animal == "dog"
       "You have a dog!"
     elsif animal == "cat"
@@ -9,7 +9,7 @@ def animal(input_animal = "dog")
     else
       "I don't recognize this animal."
     end
-  }
+  end
 end
 
 
