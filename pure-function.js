@@ -33,15 +33,22 @@ function addTwoToArray(arr){
   for ( i = 0 ; i < arr.length ; i++  ){
     newArray.push( addTwo(arr[i]) )
   } 
+  
   return newArray
+  
 }
 
 function addTwoToArray(arr){
+  
   let final = [];
+  
   for ( num of arr ){
+    
     final.push(addTwo(num));
   }
 }
+
+
 
 /*
   Create a function named addThreeToArray which accepts:
