@@ -31,7 +31,7 @@ function handleRequest(req, res) {
          
       })
     }
-    // 
+   
 
     if (parsedUrl.pathname === '/users' && req.method === 'GET') {
       var username = parsedUrl.query.username;
@@ -42,7 +42,7 @@ function handleRequest(req, res) {
       })
     }
 
-    // 
+    
 
     if (parsedUrl.pathname === '/users' && req.method === 'PUT') {
       var username = parsedUrl.query.username;
@@ -60,7 +60,7 @@ function handleRequest(req, res) {
       })
     }
     
-    //
+   
 
     if (parsedUrl.pathname === '/users' && req.method === 'DELETE') {
       var username = parsedUrl.query.username;
@@ -70,7 +70,7 @@ function handleRequest(req, res) {
       })
     }
 
-    //
+   
 
     res.statusCode = 404;
     res.end('Page not found');
