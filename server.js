@@ -52,8 +52,7 @@ function handleRequest(req, res) {
         fs.ftruncate(fd, (err) => {
           if (err) return console.log(err);
           fs.writeFile(fd, store, (err) => {
-            if (err) return console.log(err);ini"
-lastName: "Gupta"}
+            if (err) return console.log(err);
             fs.close(fd, () => {
              return res.end(`${username} updated succesfully`)
             })
