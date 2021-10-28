@@ -1,0 +1,266 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*GENERAL*/
+.video{
+    width: 100%;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 32px 0;
+}
+.container2{
+    padding: 100px 0;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+body a{
+    text-decoration: none;
+}
+/*Custom*/
+.hero{
+    position: relative;
+}
+.overlay{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(0, 0,0, 0.8);
+}
+header{
+    position: absolute;
+    top:0px;
+    left: 0px;
+    background-color: rgba(0, 0,0, 0.3);
+    width:1920px;
+}
+.hero-text{
+    position:absolute;
+    top:45%;
+    left:35%;
+    text-align: center;
+}
+.orange{
+    font-size: 33px;
+    font-weight: 800;
+    color: white;
+}
+strong{
+    color: rgb(237,86,58);
+}
+.header-nav a{
+    margin-right: 30px;
+    font-weight: 500;
+    color: white;
+    font-size: 14px;}
+
+.hero a:hover{
+    color: rgb(237,86,58);
+}
+button{
+    background-color: rgb(237,86,58);
+    border: 0;
+    height: 40px;
+    padding: 12px;
+}
+button a{
+    color: white;
+    font-weight: 500;
+}
+h5{
+    font-size: 20px;
+    font-weight: 900;
+    color: white;
+}
+h1{
+    font-size: 60px;
+    font-weight: 800;
+    color: white;
+    margin: 20px 0;
+}
+h3{
+    font-size: 25px;
+    font-weight: 800;
+}
+.choose-program-article,.our-classes-article,.schedule-article,.experts-article{
+    text-align: center;
+}
+.choose-program figure ,.our-classes figure, .schedule figure, .experts figure{
+    margin: 20px 0;
+}
+p{
+    font-size: 16px;
+    color: rgb(138,138,138);
+}
+.choose-program-grandchild{
+    margin:40px 0
+}
+.choose-program-grandchild article{
+    margin-left: 20px;
+}
+h6{
+    font-size: 20px;
+    font-weight: 700;
+}
+.choose-program-grandchild p{
+    margin: 15px 0;
+}
+.choose-program-grandchild a{
+    font-size: 14px;
+    color:rgb(237,86,58);
+}
+.choose-program-grandchild a:hover{
+    text-decoration: underline;
+}
+.choose-program-grandchild strong{
+    color: blue;
+
+}
+h2{
+    font-size: 33px;
+    font-weight: 800;
+    color: white;
+}
+.become-member{
+    background: url("cta-bg.jpg");
+    width: 100%;
+    text-align: center;
+    height: 379px;
+}
+.become-member article{
+    padding:120px 0;
+}
+.become-member p{
+    margin: 15px 0;
+}
+.our-classes-grandchild-l{
+    height: 70px;
+    margin-bottom: 20px;
+    box-shadow:rgb(138,138,138) 0.1px 0.1px 8px 0.1px;
+    padding: 15px;
+    justify-content: flex-start;
+    font-weight: 700;
+}
+.our-classes-grandchild-l img{
+    margin-right: 10px;
+}
+.our-classes-parent{
+    margin-top: 30px;
+}
+h4{
+    font-size: 20px;
+}
+.our-classes-child-l button{
+    height: 80px;
+    padding: 20px 40px;
+    border-radius: 5px;
+}
+.our-classes-child-l a{
+    font-size: 25px;
+}
+.our-classes-child-r h4{
+    font-size: 23px;
+    font-weight: 700;
+}
+.our-classes-child-r p{
+    margin: 30px 0;
+}
+.our-classes-child-r a{
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.our-classes-child-r img{
+    margin-bottom: 40px;
+}
+.schedule{
+    background: url("schedule-bg.jpg");
+}
+.schedule-article h3{
+    color: white;
+}
+table{
+    border: 2px solid;
+    margin: 0 auto;
+}
+caption{
+    margin: 30px 0;
+}
+td{
+    border: 2px solid;
+    padding:40px 60px;
+    color: white;
+    font-size: 15px;
+}
+.experts1{
+    margin-top: 40px;
+}
+.experts h4{
+    margin: 20px 0;
+}
+.experts1 img{
+    margin-bottom: 20px;
+}
+.experts1 .flex{
+    justify-content: flex-start;
+}
+.experts1 i{
+    margin-right: 10px;
+}
+.experts1 article{
+    margin-right: 40px;
+    padding:20px;
+    box-shadow: rgb(138,138,138) 1px 1px 8px 1px;
+}
