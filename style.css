@@ -1,0 +1,133 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.container{
+    max-width:1330px;
+    margin:0 auto;
+    padding:32px 0;
+}
+.flex{
+    display: flex;
+    justify-content:flex-start
+}
+header{
+    background-color: orange;
+}
+.header a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+    margin-right: 15px;
+    margin-left: 10px;   
+}
+.header li{
+    list-style-type: none;
+
+}
+.bkg{
+    background-color: wheat;
+}
+.block{
+    background-color: blue;
+    box-shadow: 0px 4px 10px black;
+    height:400px;
+    width: 300px;
+    margin-left: 10px;
+    margin-right: 30px;
+}
+.block li{
+    color: wheat;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.5;
+    list-style-type: decimal;
+    list-style-position: inside;
+
+}
+.u1{
+    list-style-type:square;
+}
+.o1{
+    list-style:decimal ;
+}
+.block2 li{
+    list-style-type: disc;
+    list-style-position: inside;
+    margin-left:  5px;
+}
+.o1 li{
+    list-style-type: decimal;
+}
+.u1 li{
+    list-style-type: square;
+}
+.block3 li{
+    list-style-image: url(1.jpg);
+    line-height: 2;
+    list-style-position: inside;
+    margin-left: 20px;
+}
+h2{
+    font-size: 30px;
+    color: black;
+    font-weight: 500;
+    line-height: 1.5;
+}
+.article p{
+    color: black;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: 20px;
+    text-align: left;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+footer{
+    background-color: brown;
+}
