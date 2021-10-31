@@ -25,4 +25,3 @@ class UncontrolledForm extends React.Component {
   }
 
   export default UncontrolledForm
-  
