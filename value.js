@@ -1,10 +1,3 @@
-
-
-let num1 = 21;
-let num2 = 32;
-
-
-
 let numA = Number(prompt("Enter first number!"));
 let numB = Number(prompt("Enter second number!"));
 
