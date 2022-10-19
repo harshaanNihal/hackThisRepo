@@ -59,13 +59,13 @@ const quotes = [
 
 // Main Function
 function quoteGenerator() {
-    var randomNumber = Math.floor(Math.random() * quotes.length);
+    const randomNumber = Math.floor(Math.random() * quotes.length);
     document.querySelector(".quote_section").innerHTML = quotes[randomNumber].quoteText;
     document.querySelector(".author_section").innerHTML = quotes[randomNumber].quoteAuthor;
 }
 
 // Selecting button tag
-var button = document.querySelector(".btn");
+const button = document.querySelector(".btn");
 
 // Event on button
 button.addEventListener("click", quoteGenerator);
