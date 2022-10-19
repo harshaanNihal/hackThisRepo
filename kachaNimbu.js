@@ -1,6 +1,6 @@
-let form = document.querySelector('form')
-let model = document.querySelector('.modal_overlay')
-let modelInfo = document.querySelector('.modal_info')
+const form = document.querySelector('form')
+const model = document.querySelector('.modal_overlay')
+const modelInfo = document.querySelector('.modal_info')
 
 let userInfo = {}
 
