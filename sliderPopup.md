@@ -2,17 +2,17 @@
 
 #### JavaScript
 ```js
-var slider = document.getElementById("slider");
-var slidertitle = document.getElementById("slidertitle");
+const slider = document.getElementById("slider");
+const slidertitle = document.getElementById("slidertitle");
 
-var sliderOffsetX = slider.getBoundingClientRect().left - document.documentElement.getBoundingClientRect().left;
-var sliderOffsetY = slider.getBoundingClientRect().top - document.documentElement.getBoundingClientRect().top;
+const sliderOffsetX = slider.getBoundingClientRect().left - document.documentElement.getBoundingClientRect().left;
+const sliderOffsetY = slider.getBoundingClientRect().top - document.documentElement.getBoundingClientRect().top;
 
-var sliderWidth = slider.offsetWidth - 1;
+const sliderWidth = slider.offsetWidth - 1;
 
 slider.addEventListener('mousemove', function(event) {
-  var currentMouseXPos = (event.clientX + window.pageXOffset) - sliderOffsetX;
-  var sliderValAtPos = Math.round(currentMouseXPos / sliderWidth * 100 + 1);
+  const currentMouseXPos = (event.clientX + window.pageXOffset) - sliderOffsetX;
+  let sliderValAtPos = Math.round(currentMouseXPos / sliderWidth * 100 + 1);
   // this...
   if(sliderValAtPos < 0) sliderValAtPos = 0;
   // ... and this are to make it easier to hover on the "0" and "100" positions
