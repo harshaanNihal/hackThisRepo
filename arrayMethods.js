@@ -1,10 +1,10 @@
 // Arrays to work on
-var numbers = [1, 12, 4, 18, 9, 7, 11, 3, 101, 5, 6];
-var strings = ["this", "is", "a", "collection", "of", "words"];
+const numbers = [1, 12, 4, 18, 9, 7, 11, 3, 101, 5, 6];
+const strings = ["this", "is", "a", "collection", "of", "words"];
 
 // Use the above two arrays and practice array methods
 
-// Find largest number in numbers
+// Find the largest number in numbers
 
 var temp = 0;
 
@@ -17,7 +17,7 @@ function biggestNumber(arr) {
   return temp;
 }
 
-// Find longest string in strings
+// Find the longest string in strings
 
 function longestString(arr) {
   for (string of arr) {
@@ -68,7 +68,7 @@ function contains_Is(arr) {
   }
 }
 
-// Check if all the numbers in numbers array are divisible by three use array method (every)
+// Check if all the numbers in the numbers array are divisible by three using array method (every)
 
 function divisibleByThree(arr) {
   return arr.every(item => item % 3 === 0);
